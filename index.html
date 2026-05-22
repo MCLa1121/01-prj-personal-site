@@ -1,11 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eric Wu | Tavern Adventurer Portfolio</title>
+
+  <!-- Loads the external style.css file that defines the page layout, colors, typography, and responsive behavior -->
+  <!-- Font Awesome icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Google Fonts: readable body font + cinematic fantasy heading font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Header and navigation menu -->
+  <header>
+    <nav class="container">
+      <div class="logo">Eric Wu</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Chronicle</a></li>
+        <li><a href="#skills">Gear</a></li>
+        <li><a href="#projects">Quests</a></li>
+        <li><a href="#interests">Tavern Board</a></li>
+        <li><a href="#contact">Raven Post</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <p class="eyebrow">Welcom to Eric's Portfolio</p>
+      <h1>Crafting Worlds Through Code</h1>
+      <p>
+        Welcome to my portfolio! I am a computer science student
+        interested in web development, AI, software engineering, and game development.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Read My Quests</a>
+        <a href="#interests" class="btn btn-secondary">Visit the Tavern Board</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">The Adventurer’s Chronicle</h2>
+
+      <div class="about-card">
+        <div class="profile-circle">
+            <img src="img/cat.png" alt="Profile photo of Eric Wu" class="profile-img">
+        </div>
+        <div>
+          <h3>Hello, I’m Eric.</h3>
+          <p>
+            I am a college student studying computer science. I enjoy learning how technology works and building projects
+            that combine logic, creativity, and design. I am especially interested in web development, artificial intelligence,
+            software engineering, and game development.
+          </p>
+          <p>
+            I like treating every project like a quest: gathering tools, solving problems, improving the design,
+            and learning from each challenge. This website is my personal tavern wall, where I collect my skills,
+            projects, interests, and future goals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Tools in My Pack</h2>
+      <p class="section-subtitle">
+        The coding tools and creative skills I carry with me on my journey.
+      </p>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-python"></i>
+        <h3>Python</h3>
+        <p>Using Python to solve problems, write scripts, work with data, and build useful programs.</p>
+      </div>
+
+        <div class="skill-card">
+          <i class="fa-brands fa-java"></i>
+          <h3>Java</h3>
+          <p>Practicing object-oriented programming, algorithms, and structured problem-solving.</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-solid fa-dice-d20"></i>
+          <h3>Game Dev</h3>
+          <p>Exploring how code, systems, characters, storytelling, and interactivity come together in games.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Quests & Creations</h2>
+      <p class="section-subtitle">
+        A few completed or future projects displayed like quests pinned near the tavern hearth.
+      </p>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-dragon"></i>
+          </div>
+          <div class="project-content">
+            <h3>Small Platform Game Demo</h3>
+            <p>
+              A small platform game demo that shows my interest in game development, level design,
+              movement mechanics, and interactive programming.
+            </p>
+            <div class="project-tags">
+              <span>Game Dev</span>
+              <span>Platformer</span>
+              <span>Demo</span>
+            </div>
+            <a class="btn btn-secondary project-link" href="https://github.com/MCLa1121/SmallPlatformGameDemo" target="_blank">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <div class="project-content">
+            <h3>CS440 AI Coursework</h3>
+            <p>
+              A collection of artificial intelligence coursework involving AI agents, decision-making,
+              algorithms, search, and reinforcement learning concepts.
+            </p>
+            <div class="project-tags">
+              <span>AI</span>
+              <span>Java</span>
+              <span>CS440</span>
+            </div>
+            <a class="btn btn-secondary project-link" href="https://github.com/MCLa1121/CS440" target="_blank">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-scroll"></i>
+          </div>
+          <div class="project-content">
+            <h3>Personal Portfolio</h3>
+            <p>
+              This website itself is a project that shows my ability to organize content, use CSS,
+              and create a strong themed single-page design.
+            </p>
+            <div class="project-tags">
+              <span>Portfolio</span>
+              <span>Design</span>
+              <span>GitHub Pages</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Personal interests section -->
+<section id="interests">
+  <div class="container">
+    <h2 class="section-title">The Tavern Board</h2>
+    <p class="section-subtitle">
+      A warmer, more personal part of the site: favorite movie, game, book, and inspirations.
+    </p>
+
+    <div class="interests-grid">
+
+      <div class="interest-card favorite-card">
+        <div class="favorite-image-box">
+          <img src="img/pulp.jpg" alt="Pulp Fiction movie poster" class="favorite-img">
+        </div>
+        <div class="interest-content">
+          <p class="favorite-label">Favorite Movie</p>
+          <h3>Pulp Fiction</h3>
+          <div class="interest-tags">
+            <span>Crime</span>
+            <span>Classic</span>
+            <span>Dark Comedy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="interest-card favorite-card">
+        <div class="favorite-image-box">
+          <img src="img/witcher.jpg" alt="The Witcher game image" class="favorite-img">
+        </div>
+        <div class="interest-content">
+          <p class="favorite-label">Favorite Game</p>
+          <h3>The Witcher</h3>
+          <div class="interest-tags">
+            <span>RPG</span>
+            <span>Fantasy</span>
+            <span>Adventure</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="interest-card favorite-card">
+        <div class="favorite-image-box">
+          <img src="img/The_Buried_Giant.png" alt="The Buried Giant book cover" class="favorite-img">
+        </div>
+        <div class="interest-content">
+          <p class="favorite-label">Favorite Book</p>
+          <h3>The Buried Giant</h3>
+          <div class="interest-tags">
+            <span>Fantasy</span>
+            <span>Myth</span>
+            <span>Literary Fiction</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Contact section -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <h2>Send a Raven</h2>
+        <p>
+          Feel free to reach out to me, always welcome!
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/MCLa1121" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/eric-wu01/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="mailto:ericwu20011213@gmail.com">
+            <i class="fa-solid fa-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Eric Wu. Built with HTML, CSS, and a little tavern firelight :) </p>
+  </footer>
 </body>
 </html>
